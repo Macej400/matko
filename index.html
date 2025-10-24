@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Matej Bodnár</title>
+  <style>
+    :root {
+      --bg-dark: #1c1c1c;
+      --bg-light: #2e2e2e;
+      --text-light: #e0e0e0;
+      --accent: #e63946;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+    }
+
+    header {
+      background-color: var(--bg-light);
+      text-align: center;
+      padding: 40px 20px;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: var(--accent);
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      color: var(--accent);
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--accent);
+      padding-bottom: 5px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: var(--bg-light);
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-left: 5px solid var(--accent);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 10px var(--accent);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #ff4d5a;
+    }
+
+    footer {
+      background-color: var(--bg-light);
+      text-align: center;
+      padding: 20px;
+      border-top: 2px solid var(--accent);
+    }
+
+    ul.social {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    ul.social li {
+      background-color: var(--bg-dark);
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    ul.social li:hover {
+      background-color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Matej Bodnár</h1>
+    <p>Študent IST | SOŠ Sečovce</p>
+  </header>
+
+  <section>
+    <h2>O mne</h2>
+    <p>Som cieľavedomý, produktívny a pracovitý študent odboru Informačné a sieťové technológie. Mám skúsenosti s tímovou prácou, technológiami ako Cisco Packet Tracer, MikroTik, programovaním v Pythone, prácou s Office balíkom a základmi grafiky.</p>
+   <img src="matko.jpeg" width="500" height="300" alt="Duálne vzdelávanie so spoločnosťou Lekos" />
+</section>
+
+
+  <section>
+    <h2>Zručnosti</h2>
+    <div class="grid">
+      <div class="card">✅ Tímová spolupráca</div>
+      <div class="card">✅ Cisco Packet Tracer</div>
+      <div class="card">✅ MikroTik konfigurácia</div>
+      <div class="card">✅ Programovanie v Pythone</div>
+      <div class="card">✅ Office balík</div>
+      <div class="card">✅ Základy grafiky</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projekty</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Spolupráca v Grécku</h3>
+        <p>Projektová spolupráca s robotickým národným tímom.</p>
+      </div>
+      <div class="card">
+        <h3>Tvorba loga pre školu</h3>
+        <p>Grafický návrh a realizácia školského loga.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Záujmy</h2>
+    <div class="grid">
+      <div class="card">🏋️‍♂️ Cvičenie a fitness</div>
+      <div class="card">👕 Móda</div>
+      <div class="card">💰 Investovanie</div>
+    </div>
+  </section>
+
+
+    <section>
+  <h2>Kontakt & Sociálne siete</h2>
+  <p>Email: <strong>matejm400@email.sk</strong></p>
+  <ul class="social">
+    <li><a href="https://github.com/Macej400/matko" target="_blank">GitHub</a></li>
+    <li><a href="https://www.instagram.com/xmatejbodnar_/" target="_blank">Instagram</a></li>
+  </ul>
+</section>
+
+
+  <footer>
+    <p>&copy; 2025 Matej Bodnár | Všetky práva vyhradené</p>
+  </footer>
+</body>
+</html>
+
